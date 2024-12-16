@@ -83,17 +83,18 @@ body {
 
 /*------------------------------------------------ Description Box (Left Side) ----------------------------*/
 .description-box {
-  background-color: #28e09a;
+  background-color: #0cf59c;
   border-radius: 8px;
   text-align: justify;
   font-size: 1.03rem;
   line-height: 1.7;
   color: #333;
+  margin-bottom: 20px;
 }
 
 /*-------------------------------------------- India Updates Box (Right Side)------------------------------ */
 .india-updates {
-  background-color: #28e09a;
+  background-color: #0cf59c;
   padding: 20px;
   border-radius: 8px;
   color: #000;
@@ -169,8 +170,8 @@ body {
 }
 
 .other-sections .btn {
-  background-color: rgba(24, 138, 141, 1);
-  color: #f4eeee;
+  background-color: #0cf59c;
+  color: #000000;
   font-weight: bold;
   padding: 15px 20px;
   border: none;
