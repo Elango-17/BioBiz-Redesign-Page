@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(24, 138, 141, 1) 11.2%,
+    rgba(96, 221, 142, 1) 91.1%
+  );
+}
+/*------------------------------------- Header Styling------------------------------------------ */
+.navbar {
+  background-color: #fff;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  display: grid;
+  align-items: start;
+  color: rgba(96, 221, 142, 1);
+}
+
+/*--------------------------------- Hero Section Styles -------------------------------------------*/
+.hero-section {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel-inner img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+/*------------------------------------------ Feature Section----------------------------------------- */
+.feature-box {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+.feature-box img {
+  width: 100%;
+  max-height: 200px;
+}
+.feature-box i {
+  color: #28a745;
+}
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/*------------------------------------------------ Description Box (Left Side) ----------------------------*/
+.description-box {
+  background-color: #28e09a;
+  border-radius: 8px;
+  text-align: justify;
+  font-size: 1.03rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/*-------------------------------------------- India Updates Box (Right Side)------------------------------ */
+.india-updates {
+  background-color: #28e09a;
+  padding: 20px;
+  border-radius: 8px;
+  color: #000;
+}
+
+.india-updates h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.updates-list p {
+  margin: 5px 0;
+}
+
+/* -------------------------------------------Full-Screen Overlay of India updates------------------------------------------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hidden and visible states */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Overlay Content */
+.overlay-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  color: #333;
+  text-align: left;
+}
+
+.overlay-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #28e09a;
+}
+
+.overlay-content .updates-list p {
+  margin: 10px 0;
+}
+
+/*------------------------------------------------------ Main and Other Sections -------------------------------*/
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-sections img,
+.other-sections img {
+  width: 50px;
+  height: 50px;
+}
+
+.other-sections .btn {
+  background-color: rgba(24, 138, 141, 1);
+  color: #f4eeee;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.other-sections .section-title {
+  color: rgb(36, 36, 36) !important;
+}
+
+.other-sections .btn:hover {
+  background-color: rgb(8, 174, 69);
+  color: #f7f7f7;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(248, 253, 250, 0.8);
+}
+
+/*---------------------------------- Social Icons---------------------- */
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #000;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #28a745;
+}
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Design of images for Mobile Screens */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 8%;
+  }
+}

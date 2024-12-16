@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioBiz</title>
+    <link rel="icon" href="imgs/logo.png" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS Link -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!----------------------------------------------------- Navigation Bar ---------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img src="imgs/logo.png" alt="Logo" class="me-2 logo-img" />
+          BioBiz India
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-home me-1"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-info-circle me-1"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-newspaper me-1"></i> India Updates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-lightbulb me-1"></i> Opportunities</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-envelope me-1"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------------------Hero Section code------------------------------------------------ -->
+
+    <section class="hero-section">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/img1.jpg" class="d-block w-100" alt="Slide 1" />
+            <div class="carousel-caption">
+              <h1>What Do We Do?</h1>
+              <p>
+                We identify opportunities, deliver market intelligence, and
+                provide strategic assistance to build a sustainable future.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/img2.jpg" class="d-block w-100" alt="Slide 2" />
+            <div class="carousel-caption">
+              <h1>Innovative Solutions</h1>
+              <p>Empowering sustainable energy through innovation.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/img3.jpg" class="d-block w-100" alt="Slide 3" />
+            <div class="carousel-caption">
+              <h1>Collaborate for Impact</h1>
+              <p>Building partnerships for a greener future.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row align-items-start">
+        <!-- Paragraph Box (Left Side) -->
+        <div class="col-md-6">
+          <div class="description-box p-3">
+            <p>
+              At BioBiz, we are keen to capitalize on India’s rich biodiversity
+              and the availability of large amounts of biomass residues to
+              develop a sustainable bio-economy and attractive business
+              opportunities for diverse stakeholders – farmers, rural
+              stakeholders, end-use industries, entrepreneurs / startups, and
+              financial investors.
+            </p>
+            <p>
+              As part of a leading climate tech consulting firm, we will provide
+              critical assistance with market intelligence, data-driven
+              analyses, professional networking, and opportunities for relevant
+              stakeholders to get effective visibility.
+            </p>
+          </div>
+        </div>
+
+        <!-- India Updates Box (Right Side) -->
+        <div class="col-md-6">
+          <div class="india-updates">
+            <h2 class="text-center">
+              <i class="fas fa-newspaper me-2"></i> India Updates
+            </h2>
+            <div class="updates-list">
+              <p><i class="fas fa-industry me-1"></i> Sugar Mill in Pilibhit</p>
+              <p>
+                <i class="fas fa-plane me-1"></i> World's Largest Sustainable
+                Aviation Fuel Plants by TruAlt
+              </p>
+              <p>
+                <i class="fas fa-seedling me-1"></i> Biofuel production from
+                Seaweed Biomass: HPCL partners with Sea6 Energy
+              </p>
+              <p>
+                <i class="fas fa-bolt me-1"></i> Green Hydrogen Plant in Baddi:
+                Oil India and Himachal Pradesh Power Corporation partner
+              </p>
+              <p>
+                <i class="fas fa-recycle me-1"></i> Bio-CNG Plants in 2 Cow
+                Shelters by Greater Noida Authority
+              </p>
+            </div>
+            <div class="text-center mt-3">
+              <button id="toggle-overlay" class="btn btn-outline-dark">
+                View All
+              </button>
+            </div>
+          </div>
+
+          <!----------------------------- Full-Screen Overlay Code---------------------------------->
+          <div id="overlay" class="overlay hidden">
+            <div class="overlay-content">
+              <h2 class="text-center">
+                <i class="fas fa-newspaper me-2"></i> India Updates
+              </h2>
+              <div class="updates-list">
+                <p>
+                  <i class="fas fa-industry me-1"></i> Sugar Mill in Pilibhit
+                </p>
+                <p>
+                  <i class="fas fa-plane me-1"></i> World's Largest Sustainable
+                  Aviation Fuel Plants by TruAlt
+                </p>
+                <p>
+                  <i class="fas fa-seedling me-1"></i> Biofuel production from
+                  Seaweed Biomass: HPCL partners with Sea6 Energy
+                </p>
+                <p>
+                  <i class="fas fa-bolt me-1"></i> Green Hydrogen Plant in
+                  Baddi: Oil India and Himachal Pradesh Power Corporation
+                  partner
+                </p>
+                <p>
+                  <i class="fas fa-recycle me-1"></i> Bio-CNG Plants in 2 Cow
+                  Shelters by Greater Noida Authority
+                </p>
+                <p>
+                  <i class="fas fa-wind me-1"></i> Renewable Energy Expansion in
+                  Rajasthan
+                </p>
+                <p>
+                  <i class="fas fa-leaf me-1"></i> Biomass Projects in Southern
+                  India
+                </p>
+                <p>
+                  <i class="fas fa-sun me-1"></i> Solar Energy Initiatives by
+                  MNRE
+                </p>
+              </div>
+              <div class="text-center mt-3">
+                <button id="close-overlay" class="btn btn-outline-danger">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------------- Main Section Code ------------------------------->
+    <section class="container my-5">
+      <h2 class="section-title">
+        <i class="fas fa-th-list me-2"></i> Main Sections
+      </h2>
+      <div class="row text-center main-sections">
+        <div class="col-md-3">
+          <i class="fas fa-briefcase fa-2x mb-2"></i>
+          <h5>Opportunities</h5>
+        </div>
+        <div class="col-md-3">
+          <i class="fas fa-chart-line fa-2x mb-2"></i>
+          <h5>Consulting</h5>
+        </div>
+        <div class="col-md-3">
+          <i class="fas fa-lightbulb fa-2x mb-2"></i>
+          <h5>Insights</h5>
+        </div>
+        <div class="col-md-3">
+          <i class="fas fa-flask fa-2x mb-2"></i>
+          <h5>Innovation Insights</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------- Other Section Code -------------------------------------------->
+    <section class="other-sections text-center">
+      <h2 class="section-title text-white">Other Sections</h2>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn">India Updates</button>
+        <button class="btn">Weekly Updates</button>
+        <button class="btn">BRING</button>
+        <button class="btn">India Biomass Residues</button>
+      </div>
+
+      <p class="mt-4">
+        BioBiz is a division of Energy Alternatives India (EAI)
+      </p>
+    </section>
+
+    <!------------------------------------------------------- Social Media Icons Code------------------------------------->
+    <div class="text-center my-4">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------- Footer Code ---------------------------------------------->
+    <footer>
+      <p>&copy; 2024 BioBiz India. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
